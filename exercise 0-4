@@ -1,0 +1,38 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    server-->>browser: Status 302: redirect request
+    deactivate server
+
+    note left of server: The server receives new data and requests the browser to reload the Notes page
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    activate server
+    server-->>browser: the Notes HTML file
+    deactivate server
+
+    note right of browser: The browser begins rendering the HTML
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    activate server
+    server-->>browser: the CSS file
+    deactivate server
+
+    note right of browser: The browser styles the HTML
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    activate server
+    server-->>browser: the JS file
+    deactivate server
+
+    note right of browser: The browser begins executing the JS code
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    activate server
+    server-->>browser: [{"content": "note1", "note2", ... }] 
+    deactivate server
+
+    note right of browser: The browser executes the callback function for the note data
