@@ -1,3 +1,21 @@
+Links to other Fullstack Open parts:
+
+[Part 1](https://github.com/vilequarter/fullstack-open-part-1)
+
+[Part 2](https://github.com/vilequarter/fullstack-open-part-2)
+
+[Part 3](https://github.com/vilequarter/fullstack-open-part-3)
+
+[Part 4](https://github.com/vilequarter/fullstack-open-part-4)
+
+[Part 5](https://github.com/vilequarter/fullstack-open-part-5)
+
+[Part 6](https://github.com/vilequarter/fullstack-open-part-6)
+
+[Part 7](https://github.com/vilequarter/fullstack-open-part-7)
+
+[Part 8](https://github.com/vilequarter/fullstack-open-part-8)
+
 # Fullstack Open part0
 
 Exercise 0.4 (new note diagram):
